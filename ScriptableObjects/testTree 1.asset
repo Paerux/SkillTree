@@ -1,0 +1,282 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7755575678063310067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8931015e697efc48a98ed8f7c7612e7, type: 3}
+  m_Name: Fire Sword
+  m_EditorClassIdentifier: 
+  skillName: Fire Sword
+  icon: {fileID: 21300000, guid: 773b80526504de346815bdb16399003d, type: 3}
+  description: Flaming sword of death
+  pointCap: 1
+  skillPointsRequired: 0
+  parentSkills:
+  - {fileID: 9037124643695209981}
+  - {fileID: 5545957946433862629}
+  childSkills: []
+  pointsGiven: 0
+  maxedOut: 0
+  ownerSkillTree: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 255
+    y: 689
+    width: 150
+    height: 75
+  selected: 0
+  dragging: 0
+--- !u!114 &-6525219351206678382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8931015e697efc48a98ed8f7c7612e7, type: 3}
+  m_Name: Dragon Breath
+  m_EditorClassIdentifier: 
+  skillName: Dragon Breath
+  icon: {fileID: 21300000, guid: 70d825b0d5c2bc44d8e224e148e532d7, type: 3}
+  description: Dragon breathes fire
+  pointCap: 1
+  skillPointsRequired: 0
+  parentSkills: []
+  childSkills:
+  - {fileID: -5565087456988737239}
+  - {fileID: 7960583173378360526}
+  pointsGiven: 0
+  maxedOut: 0
+  ownerSkillTree: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 668
+    y: 232
+    width: 150
+    height: 75
+  selected: 0
+  dragging: 0
+--- !u!114 &-6443808090345907926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8931015e697efc48a98ed8f7c7612e7, type: 3}
+  m_Name: Fire Rock
+  m_EditorClassIdentifier: 
+  skillName: Fire Rock
+  icon: {fileID: 21300000, guid: 8ed3a369617d4fe43b8553423348b83f, type: 3}
+  description: idk
+  pointCap: 1
+  skillPointsRequired: 11
+  parentSkills:
+  - {fileID: -5565087456988737239}
+  - {fileID: 7960583173378360526}
+  childSkills: []
+  pointsGiven: 0
+  maxedOut: 0
+  ownerSkillTree: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 702
+    y: 690
+    width: 150
+    height: 75
+  selected: 0
+  dragging: 0
+--- !u!114 &-5565087456988737239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8931015e697efc48a98ed8f7c7612e7, type: 3}
+  m_Name: Pixel Fire
+  m_EditorClassIdentifier: 
+  skillName: Pixel Fire
+  icon: {fileID: 21300000, guid: 2dd6364064f0d96408d46449e7c05e05, type: 3}
+  description: Pixel icon fire
+  pointCap: 1
+  skillPointsRequired: 0
+  parentSkills:
+  - {fileID: -6525219351206678382}
+  childSkills:
+  - {fileID: -6443808090345907926}
+  pointsGiven: 0
+  maxedOut: 0
+  ownerSkillTree: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 637
+    y: 485
+    width: 150
+    height: 75
+  selected: 0
+  dragging: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c07bc0e3c5d3f542b54620dffb526d1, type: 3}
+  m_Name: testTree 1
+  m_EditorClassIdentifier: 
+  skills:
+  - {fileID: 9037124643695209981}
+  - {fileID: 5545957946433862629}
+  - {fileID: -7755575678063310067}
+  - {fileID: 9191812927826780215}
+  - {fileID: -6525219351206678382}
+  - {fileID: -5565087456988737239}
+  - {fileID: 7960583173378360526}
+  - {fileID: -6443808090345907926}
+  pointsGiven: 0
+  connectionStartSkill: {fileID: 0}
+  lineEndPosition: {x: 0, y: 0}
+--- !u!114 &5545957946433862629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8931015e697efc48a98ed8f7c7612e7, type: 3}
+  m_Name: Meteor
+  m_EditorClassIdentifier: 
+  skillName: Meteor
+  icon: {fileID: 21300000, guid: 7827029effc0d2348b07ca685399e0a0, type: 3}
+  description: Random meteor falls down from the sky
+  pointCap: 1
+  skillPointsRequired: 0
+  parentSkills:
+  - {fileID: 9191812927826780215}
+  childSkills:
+  - {fileID: -7755575678063310067}
+  pointsGiven: 0
+  maxedOut: 0
+  ownerSkillTree: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 368
+    y: 487
+    width: 150
+    height: 75
+  selected: 0
+  dragging: 0
+--- !u!114 &7960583173378360526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8931015e697efc48a98ed8f7c7612e7, type: 3}
+  m_Name: Fire Shield
+  m_EditorClassIdentifier: 
+  skillName: Fire Shield
+  icon: {fileID: 21300000, guid: 0dc107cf456b6304fb749d040074caad, type: 3}
+  description: Fire shield that absorbs 420 damage
+  pointCap: 1
+  skillPointsRequired: 0
+  parentSkills:
+  - {fileID: -6525219351206678382}
+  childSkills:
+  - {fileID: -6443808090345907926}
+  pointsGiven: 0
+  maxedOut: 0
+  ownerSkillTree: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 846
+    y: 483
+    width: 150
+    height: 75
+  selected: 0
+  dragging: 0
+--- !u!114 &9037124643695209981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8931015e697efc48a98ed8f7c7612e7, type: 3}
+  m_Name: Fire Staff
+  m_EditorClassIdentifier: 
+  skillName: Fire Staff
+  icon: {fileID: 21300000, guid: e52f187eb58ccc942b4408811be05534, type: 3}
+  description: Staff things
+  pointCap: 1
+  skillPointsRequired: 0
+  parentSkills:
+  - {fileID: 9191812927826780215}
+  childSkills:
+  - {fileID: -7755575678063310067}
+  pointsGiven: 0
+  maxedOut: 0
+  ownerSkillTree: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 140
+    y: 487
+    width: 150
+    height: 75
+  selected: 0
+  dragging: 0
+--- !u!114 &9191812927826780215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8931015e697efc48a98ed8f7c7612e7, type: 3}
+  m_Name: Three Fire
+  m_EditorClassIdentifier: 
+  skillName: Three Fire
+  icon: {fileID: 21300000, guid: 11427fc02e8e41d46ace502f5ae18f8a, type: 3}
+  description: Three fire things. Deals damage
+  pointCap: 5
+  skillPointsRequired: 0
+  parentSkills: []
+  childSkills:
+  - {fileID: 9037124643695209981}
+  - {fileID: 5545957946433862629}
+  pointsGiven: 0
+  maxedOut: 0
+  ownerSkillTree: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 293
+    y: 228
+    width: 150
+    height: 75
+  selected: 0
+  dragging: 0
